@@ -17,7 +17,6 @@ use Kdyby\DateTimeProvider\DateProviderInterface;
 use Kdyby\DateTimeProvider\DateTimeProviderInterface;
 use Kdyby\DateTimeProvider\TimeProviderInterface;
 use Kdyby\DateTimeProvider\TimeZoneProviderInterface;
-use Kdyby\StrictObjects\Scream;
 
 class CurrentProvider implements
     DateTimeProviderInterface,
@@ -26,7 +25,6 @@ class CurrentProvider implements
     TimeZoneProviderInterface
 {
     use ProviderTrait;
-    use Scream;
 
     /**
      * {@inheritdoc}

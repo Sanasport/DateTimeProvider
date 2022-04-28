@@ -16,7 +16,6 @@ use DateTime;
 use DateTimeImmutable;
 use DateTimeZone;
 use Kdyby\DateTimeProvider\NotImplementedException;
-use Kdyby\StrictObjects\Scream;
 use function date_default_timezone_get;
 use function get_class;
 use function gettype;
@@ -30,7 +29,6 @@ use function sprintf;
  */
 class ConstantProviderFactory
 {
-    use Scream;
 
     /**
      * @param string|int|\DateTimeImmutable|\DateTime $dateTime
