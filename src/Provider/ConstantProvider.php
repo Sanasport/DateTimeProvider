@@ -17,7 +17,6 @@ use Kdyby\DateTimeProvider\DateProviderInterface;
 use Kdyby\DateTimeProvider\DateTimeProviderInterface;
 use Kdyby\DateTimeProvider\TimeProviderInterface;
 use Kdyby\DateTimeProvider\TimeZoneProviderInterface;
-use Kdyby\StrictObjects\Scream;
 
 class ConstantProvider implements
     DateTimeProviderInterface,
@@ -26,7 +25,6 @@ class ConstantProvider implements
     TimeZoneProviderInterface
 {
     use ImmutableProviderTrait;
-    use Scream;
 
     /**
      * @var \DateTimeImmutable
